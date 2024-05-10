@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINT DIECAST</title>
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css">
+</head>
+<div>
+<body>
+<div><nav class="navbar">
+<ul>
+    <li><a href="http://127.0.0.1:5500/N2.html">Home</a></li>
+    <li><a href="http://127.0.0.1:5500/Ablaoweb.html">About Us</a></li>
+    <li><a href="http://127.0.0.1:5500/About%20Us.html">Recommendations</a></li>
+    <li><a href="http://127.0.0.1:5500/SOCIALS.html">Socials</a></li>
+</ul>
+</div>
+<body>
+    
+</nav>
+<h1><h1>Some brands of diescast that can interest you</h1></h1>
+<div>
+    <a href="http://127.0.0.1:5500/About%20Us.html"><img id="img-gal" src="Carlogo copy.jpg"></a>
+</div>
+</div>
+<div>
+    <a href="https://www.facebook.com/ablao.dherickandrew"><img id="img-gal" src="facebook.png"></a>
+    <a href="https://www.instagram.com/balernx_evasive/"><img id="img-gal" src="instagram.jfif"></a>
+    
+    <p>For other questions please just contact me on my socials or just call this number. 09604365156.
+
+    </p>
+</div>
+
+<div class="card">
+    <h1>Please Rate Us!!</h1>
+    <br />
+    <span onclick="gfg(1)"
+          class="star">★
+    </span>
+    <span onclick="gfg(2)"
+          class="star">★
+    </span>
+    <span onclick="gfg(3)"
+          class="star">★
+    </span>
+    <span onclick="gfg(4)"
+          class="star">★
+    </span>
+    <span onclick="gfg(5)"
+          class="star">★
+    </span>
+    <h3 id="output">
+          Rating is: 0/5
+      </h3>
+</div>
+<script src="script.js"></script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+       
+       body
+       {text-align: center;}
+      .card {
+        max-width: 33rem;
+        background: #fff;
+        margin: 0 1rem;
+        padding: 1rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+       
+      .star {
+        font-size: 10vh;
+        cursor: pointer;
+      }
+       
+      .one {
+        color: rgb(255, 255, 0);}
+       
+      .two {
+        color:rgb(255, 255, 0);
+      }
+       
+      .three {
+        color: rgb(255, 255, 0);
+      }
+       
+      .four {
+        color: rgb(255, 255, 0);
+      }
+       
+      .five {
+        color:rgb(255, 255, 0);
+      }
+
+</style>
+
+<script>
+// script.js
+ 
+let stars = 
+    document.getElementsByClassName("star");
+let output = 
+    document.getElementById("output");
+ 
+function gfg(n) {
+    remove();
+    for (let i = 0; i < n; i++) {
+        if (n == 1) cls = "one";
+        else if (n == 2) cls = "two";
+        else if (n == 3) cls = "three";
+        else if (n == 4) cls = "four";
+        else if (n == 5) cls = "five";
+        stars[i].className = "star " + cls;
+    }
+    output.innerText = "Rating is: " + n + "/5";
+}
+ 
+function remove() {
+    let i = 0;
+    while (i < 5) {
+        stars[i].className = "star";
+        i++;
+    }
+}
+
+</script>
+<div><footer class="footer">&copy;CLINT.INC</footer></div>
+<h2>
+</h2>
+
+</body>
+</div>
+</html>
